@@ -59,7 +59,45 @@ const ProjectDetailPage: React.FC = () => {
       </section>
       
       {/* Project Details */}
-      {/* RIMOSSO: Sezione dettagli progetto (obiettivo, approccio, risultati, descrizione, tag) */}
+      <section className="section">
+        <div className="container">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+              <div>
+                <h3 className="text-xl font-semibold text-primary-800 mb-3">Obiettivo</h3>
+                <p className="text-neutral-600">{project.objective}</p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-primary-800 mb-3">Approccio</h3>
+                <p className="text-neutral-600">{project.approach}</p>
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-primary-800 mb-3">Risultati</h3>
+                <p className="text-neutral-600">{project.results}</p>
+              </div>
+            </div>
+            
+            <div className="mb-12">
+              <h3 className="text-xl font-semibold text-primary-800 mb-3">Il progetto</h3>
+              <p className="text-neutral-600">{project.description}</p>
+            </div>
+            
+            <div>
+              <h3 className="text-xl font-semibold text-primary-800 mb-3">Tag</h3>
+              <div className="flex flex-wrap gap-2">
+                {project.tags.map((tag, index) => (
+                  <span 
+                    key={index}
+                    className="bg-neutral-100 text-neutral-700 px-3 py-1 rounded-full text-sm"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       
       {/* Next/Prev Navigation */}
       <section className="bg-neutral-50 py-12">

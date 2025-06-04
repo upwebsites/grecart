@@ -8,6 +8,7 @@ export interface Project {
   results: string;
   thumbUrl: string;
   imageUrls: string[];
+  year: string;
 }
 
 export const projects: Project[] = [
@@ -21,10 +22,9 @@ export const projects: Project[] = [
     results: "Incremento della brand awareness e feedback positivo dai clienti abituali e nuovi.",
     thumbUrl: "/images/pac_cash_and_carry.png",
     imageUrls: [
-      "/images/portfolio/pac1.jpg",
-      "/images/portfolio/pac2.jpg",
-      "/images/portfolio/pac3.jpg"
-    ]
+      "/images/pac_cash_and_carry.png"
+    ],
+    year: "2023"
   },
   {
     id: "io-e-mio-fratello-supermercati",
@@ -36,10 +36,9 @@ export const projects: Project[] = [
     results: "Aumento delle visite online e incremento delle conversioni sulle offerte digitali.",
     thumbUrl: "/images/io_e_mio_fratello_supermercato.jpg",
     imageUrls: [
-      "/images/portfolio/ioemiofratello1.jpg",
-      "/images/portfolio/ioemiofratello2.jpg",
-      "/images/portfolio/ioemiofratello3.jpg"
-    ]
+      "/images/io_e_mio_fratello_supermercato.jpg"
+    ],
+    year: "2022"
   },
   {
     id: "carrefour",
@@ -51,8 +50,8 @@ export const projects: Project[] = [
     results: "Incremento delle vendite della linea e riconoscimenti per il design sostenibile.",
     thumbUrl: "/images/carrefour.jpg",
     imageUrls: [
-      "/images/portfolio/carrefour1.jpg",
-      "/images/portfolio/carrefour2.jpg"
-    ]
+      "/images/carrefour.jpg"
+    ],
+    year: "2023"
   }
 ];
